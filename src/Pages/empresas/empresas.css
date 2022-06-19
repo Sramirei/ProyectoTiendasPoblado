@@ -1,60 +1,6 @@
-.title{
-   display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,300&family=Oxygen:wght@400;700&display=swap');
+
+.body{
+    font-family: 'Oxygen', sans-serif;
 }
 
-.title h1{
-    margin: 10px 0 10px 7.5rem;
-}
-
-/* tamano ipad mini */
-
-@media only screen and (min-width:760px){  
-
-    .title h1{
-        font-size: 3rem;
-        margin: 10px 0 10px 11.5rem;
-    }
-
-}
-
-/* tamano ipad air */
-
-@media only screen and (min-width:820px){ 
-
-    .title h1{
-        font-size: 3rem;
-        margin: 10px 0 10px 13.5rem;
-    }
-
-}
-
-/* Tamano Hub */
-
-@media only screen and (min-width:1024px){ 
-
-    .title h1{
-        margin: 10px 0 10px 22rem;
-    }
-
-}
-
-
-/* Tamano hub Max */
-
-@media only screen and (min-width:1280px){ 
-
-    .title h1{
-        margin: 10px 0 10px 28rem;
-    }
-
-}
-
-/* Tamano mas grande */
-
-@media only screen and (min-width:1534px){ 
-
-    .title h1{
-        margin: 10px 0 10px 37rem;
-    }
-
-}
