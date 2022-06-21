@@ -1,0 +1,7 @@
+.empresas{
+    scrollbar-width: none;
+}
+
+.empresas ::-webkit-scrollbar {
+    display: none;
+}

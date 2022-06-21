@@ -28,7 +28,6 @@ const Home = () => {
     <>
 
 <div className='baner'>
-  <h1>Aqui va el banner</h1>
   <br/>
   <br/>
   <br/>
@@ -42,7 +41,7 @@ const Home = () => {
       <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
       <div
         id='slider'
-        className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide'
+        className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide slider'
       >
         {empresas.map((item) => (
           <img
