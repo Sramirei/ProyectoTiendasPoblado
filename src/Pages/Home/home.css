@@ -1,7 +1,119 @@
 .empresas{
     scrollbar-width: none;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .empresas ::-webkit-scrollbar {
     display: none;
+}
+
+/* tamano ipad mini */
+
+.empresas{
+    scrollbar-width: none;
+}
+
+.empresas ::-webkit-scrollbar {
+    display: none;
+}
+
+/* Tamaño del banner */
+.banner {
+    width: 100%;
+    height: 100%;
+  }
+
+@media only screen and (min-width:760px){  
+/* 
+    img{
+        
+        height: 400px;
+        width: 1350px;
+        margin: 0px auto;
+    } */
+    h2{
+        text-align: center;
+    }
+   /*  p{
+        text-align: center;
+    } */
+    .cc{
+        text-align: center;
+        font-size: 18px;
+    }
+    .imgRedonda {
+        width:200px !important;
+        height:200px !important;
+        border-radius:150px !important;
+    }
+    .img3{
+        height: auto;
+        width: 537px;
+    }
+    .imgg3{
+        height: 500px;
+        width: 537px;
+    }
+}
+
+/* tamano ipad air */
+
+@media only screen and (min-width:820px){ 
+
+    h2{
+        text-align: center;
+    }
+   
+    .imgRedonda {
+        width:200px !important;
+        height:200px !important;
+        border-radius:150px !important;
+    }
+}
+
+/* Tamano Hub */
+
+@media only screen and (min-width:1024px){ 
+
+    h2{
+        text-align: center;
+    }
+    
+    .imgRedonda {
+        width:200px !important;
+        height:200px !important;
+        border-radius:150px !important;
+    }
+}
+
+
+/* Tamano hub Max */
+
+@media only screen and (min-width:1280px){ 
+
+    h2{
+        text-align: center;
+    }
+   
+    .imgRedonda {
+        width:200px !important;
+        height:200px !important;
+        border-radius:150px !important;
+    }
+}
+
+/* Tamano mas grande */
+
+@media only screen and (min-width:1534px){ 
+
+    h2{
+        text-align: center;
+    }
+    
+    .imgRedonda {
+        width:200px !important;
+        height:200px !important;
+        border-radius:150px !important;
+    }
 }

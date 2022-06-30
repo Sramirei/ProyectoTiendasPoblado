@@ -1,0 +1,148 @@
+.title{
+    margin-left: 20%;  
+}
+
+.title h1{
+    margin-bottom: 0;
+    font-size: 30px;
+}
+
+.linea{
+    border-top: 1px solid #0d2033;
+    height: 2px;
+    max-width: 100%;
+    padding: 0;
+    margin: 20px ; 
+}
+
+.nosotros{
+    margin-top: 1rem;
+}
+
+.parrafo1{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.parrafo1 h3{
+    font-size: 30px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+.parrafo1 h3:hover{
+    color: aqua;
+}
+
+.parrafo1 p{
+    font-size: 13.5px;
+}
+
+.parrafo2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.parrafo2 h3{
+    font-size: 30px;
+    margin-left: 70%;
+    margin-bottom: 10px;
+}
+
+.parrafo2 h3:hover{
+    color: aqua;
+}
+
+.parrafo2 p{
+    font-size: 13.5px;
+}
+
+.imag{
+    width: 360px;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+@media only screen and (min-width: 390px){
+
+    .imag{
+        margin-left: 2%;
+        margin-right: 10%; 
+    }
+
+}
+
+@media only screen and (min-width: 414px){
+
+    .imag{
+        margin-left: 4%;
+        margin-right: 10%; 
+    }
+
+}
+
+@media only screen and (min-width: 480px){
+
+    .imag{
+        margin-left: 10%;
+        margin-right: 10%; 
+    }
+
+}
+
+@media only screen and (min-width: 620px){
+
+    .imag{
+        margin-left: 15%;
+        margin-right: 10%; 
+    }
+
+}
+
+@media only screen and (min-width: 765px){
+
+    .imag{
+        margin-left: 22%;
+        margin-right: 10%; 
+    }
+
+}
+
+@media only screen and (min-width: 915px){
+
+    .parrafo1{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    .parrafo2{
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-between;
+    }
+
+    .parrafo1 h3{
+        font-size: 40px;
+    }
+    .parrafo1 p{
+        font-size: 20px;
+    }
+
+    .parrafo2 h3{
+        font-size: 40px;
+    }
+
+    .parrafo2 p{
+        font-size: 20px;
+    }
+
+    .imag{
+        margin-left: 5%;
+        width: 500px;
+    }
+
+}
+

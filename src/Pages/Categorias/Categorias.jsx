@@ -23,19 +23,19 @@ const [categorias, setCategorias] = useState(null);
              <div key={categoria.id} className="group relative">
                <div className="relative w-full h-80 bg-white rounded-lg overflow-hidden group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
                  <img
-                   src={categoria.imagen}
-                   alt={categoria.nombre}
+                   src={categoria.img}
+                   alt={categoria.name}
                    className="w-full h-full object-center object-cover"
                  />
                </div>
                <h3 className="mt-6 text-sm text-gray-500">
-                 <NavLink to={`/Empresas/${categoria.nombre}`}>
+                 <NavLink to={`/Empresas/${categoria.name}`}>
                    <span className="absolute inset-0" />
-                   {categoria.nombre}
+                   {categoria.name}
                  </NavLink>
                </h3>
                {/* Descripcion de la categoria */}
-               <p className="text-base font-semibold text-gray-900">{categoria.nombre}</p>
+               <p className="text-base font-semibold text-gray-900">{categoria.description}</p>
              </div>
            ))}
          </div>

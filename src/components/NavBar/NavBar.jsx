@@ -5,14 +5,14 @@ import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import  logo from "./POBLA-WEB-LOGO.png"
 import Image from './Image.jpeg'
+import './NavBar.css'
 
 const NavBar = () => {
 
     const navigation = [
-        { name: 'Home', href: '/' },
-        { name: 'Cateorias', href: '/categorias' },
-        { name: 'about', href: '#' },
-        { name: 'Contact', href: '#' },
+        { name: 'Inicio', href: '/' },
+        { name: 'Categorías', href: '/categorias' },
+        { name: '¿Quienes Somos?', href: '/About' },
       ]
 
   return (
@@ -37,9 +37,10 @@ const NavBar = () => {
             <div className="flex items-center justify-between w-full md:w-auto">
               <NavLink to={'/'}>
                 <span className="sr-only">Poblado Web</span>
+                {/* Logo modificado css */}
                 <img
                   alt="Poblado Web"
-                  className="h-8 w-auto sm:h-10"
+                  className="logo"
                   src={logo}
                 />
               </NavLink>
@@ -57,8 +58,8 @@ const NavBar = () => {
                 {item.name}
               </NavLink>
             ))}
-            <NavLink to={"*"} className="font-medium text-cyan-600 hover:text-cyan-500">
-              Contactenos
+            <NavLink to={'/contacto'} className="font-medium text-cyan-600 hover:text-cyan-500">
+              Contáctenos
             </NavLink>
           </div>
         </nav>
@@ -80,15 +81,16 @@ const NavBar = () => {
           <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div className="px-5 pt-4 flex items-center justify-between">
               <div>
+                {/* Logo responsive modificado css */}
                 <img
-                  className="h-8 w-auto"
+                  className="logo2"
                   src={logo}
                   alt="Pobla Web"
                 />
               </div>
               <div className="-mr-2">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
-                  <span className="sr-only">Close main menu</span>
+                  <span className="sr-only">Cerrar menu desplegable</span>
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
@@ -105,10 +107,10 @@ const NavBar = () => {
               ))}
             </div>
             <NavLink
-              to={"*"}
+              to={"/contacto"}
               className="block w-full px-5 py-3 text-center font-medium text-cyan-600 bg-gray-50 hover:bg-gray-100"
             >
-              Contactanos
+              Contáctenos
             </NavLink>
           </div>
         </Popover.Panel>
