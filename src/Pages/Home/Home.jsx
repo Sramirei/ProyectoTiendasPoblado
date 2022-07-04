@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { allEmpresas } from '../../funtions'
+import { allHomex } from '../../funtions'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import Cargando from '../../components/Cargando/Cargando'
 import './home.css'
@@ -8,9 +8,9 @@ import './home.css'
 let count=0;
 const Home = () => {
 
-  const [empresas, setEmpresas] = useState(null)
+  const [homex, setHomex] = useState(null)
   useEffect(() =>{
-    allEmpresas(setEmpresas)
+    allHomex(setHomex)
   },[])
 
 
@@ -27,7 +27,7 @@ const Home = () => {
 //Banner y productos
   const featuredProducts = [
     "./images/imagen_1.jpg",
-    "./images/imagen_2.jpg",
+    "./images/imagen_2.png",
     "./images/imagen_3.jpg",
   ];
   
@@ -142,6 +142,9 @@ const Home = () => {
     return (
       <>
       {/* Codigo banner */}
+      <br />
+      <center className="letra text-2xl font-extrabold tracking-tight text-black-200 " >Promociones Recientes</center>
+      <br />
       <div className="w-full select-none relative">
     <div className="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
             <img className="banner"
@@ -164,22 +167,21 @@ const Home = () => {
   <br></br>  
   <br></br>  
 
-  <h2 className="letra text-2xl font-extrabold tracking-tight text-black-200" >Empresas Asociadas</h2>
-  <br></br>
+  <center className="letra text-2xl font-extrabold tracking-tight text-black-200" >Empresas Asociadas</center>
   
 <section className='empresas' id='empresas'>
-      {empresas != null ? (
+      {homex != null ? (
       <div className='relative flex items-center'>
       <MdChevronLeft className='opacity-50 cursor-pointer hover:opacity-100' onClick={slideLeft} size={40} />
       <div
         id='slider'
         className='w-full h-full overflow-x-scroll scroll whitespace-nowrap scroll-smooth scrollbar-hide slider'
       >
-        {empresas.map((item) => (
+        {homex.map((item) => (
           <img
             key={item.id}
             className='w-[220px] inline-block p-2 cursor-pointer hover:scale-105 ease-in-out duration-300'
-            src={item.imagen}
+            src={item.img}
             alt='/'
           />
         ))}
@@ -191,57 +193,57 @@ const Home = () => {
 </section>
     
     {/* Codigo productos */}
-      <div className="bg-white">
+    
         <div className="pt-6">
-        <h2 className="letra text-2xl font-extrabold tracking-tight text-black-200 " >Para Consentirte</h2>
+        <center className="letra text-2xl font-extrabold tracking-tight text-black-200 " >Para Consentirte</center>
 
           {/* Imagenes de 2*/}
-          <div className="mt-6 max-w-2xl mx-auto sm:px-9 lg:max-w-7xl lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-x-8 gap-8 sm:px-8 px-10 py-16">
+          <div className="tamaño lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:gap-x-8 gap-8 sm:py-2 sm:py-4 px-5 py-4">
             <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
               <img
                 src={EmpresaImags2.imageness[0].src}
                 alt={EmpresaImags2.imageness[0].alt}
-                className="w-full h-full object-center object-cover"
+                className="borde w-full h-full object-center object-cover"
               />
             </div>
             <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
               <img
                  src={EmpresaImags2.imageness[1].src}
                  alt={EmpresaImags2.imageness[1].alt}
-                className="w-full h-full object-center object-cover"
+                className="borde w-full h-full object-center object-cover"
               />
             </div>
           </div>
         </div>
-      </div>
+  
 
-      <div className="bg-white">
+ 
         <div className="pt-6">
-        <h2 className="letra text-2xl font-extrabold tracking-tight text-black-200 " >Para tus mascotas</h2>
+        <center className="letra text-2xl font-extrabold tracking-tight text-black-200 " >Para tus mascotas</center>
 
           {/* Imagenes de 3*/}
-          <div className="mt-6 max-w-2xl mx-auto sm:px-6 lg:max-w-7xl lg:px-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 lg:gap-x-8 gap-6 sm:px-8 px-5 py-16"> 
+          <div className="tamaño lg:px-8 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 lg:gap-x-8 gap-6 sm:py-2 sm:py-4 px-5 py-4"> 
             <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
               <img
                 src={EmpresaImags3.images[0].src}
                 alt={EmpresaImags3.images[0].alt}
-                className="w-full h-full object-center object-cover"
+                className=" borde w-full h-full object-center object-cover"
               />
             </div>
             
-            <div className="grid lg:grid-cols-1 lg:gap-y-2 ">
+            <div className="grid lg:grid-cols-1 lg:gap-y-2 gap-2">
               <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
                 <img
                   src={EmpresaImags3.images[1].src}
                   alt={EmpresaImags3.images[1].alt}
-                  className="w-full h-full object-center object-cover"
+                  className="borde w-full h-full object-center object-cover"
                 />
               </div>
               <div className="aspect-w-4 aspect-h-5 sm:rounded-lg sm:overflow-hidden lg:aspect-w-3 lg:aspect-h-4">
                 <img
                   src={EmpresaImags3.images[2].src}
                   alt={EmpresaImags3.images[2].alt}
-                  className="w-full h-full object-center object-cover"
+                  className="borde w-full h-full object-center object-cover"
                 />
               </div>
             </div>
@@ -249,12 +251,12 @@ const Home = () => {
               <img
                  src={EmpresaImags3.images[3].src}
                  alt={EmpresaImags3.images[3].alt}
-                className="w-full h-full object-center object-cover"
+                className="borde w-full h-full object-center object-cover"
               />
             </div>
           </div>
         </div>
-      </div>
+ 
       
     </>
   )

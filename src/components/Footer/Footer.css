@@ -1,0 +1,40 @@
+.red-social a{
+    display:inline-block;
+    text-decoration:none;
+    width:45px;
+    height:45px;
+    line-height:45px;
+    color: #fff;
+    margin-right:10px;
+    text-align:center;
+    transition:all 300ms ease;
+}
+.letras-boton{
+    font-weight: 600;
+    
+}
+.red-social  a:hover{
+    color:aqua;
+}
+
+.derecho-reservado {
+
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff
+}
+
+/* Mensaje de error y exito correo promocional */
+.correoprom .error {
+	color: #e92b2d;
+	font-weight: 600;
+	font-size: 12px;
+    padding-top: 10px;
+}
+
+.correoprom .exito {
+	font-weight: 600;
+	font-size: 12px;
+	padding-top: 10px;
+	color: #02a802;
+}

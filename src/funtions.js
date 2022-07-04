@@ -20,6 +20,11 @@ const allEmpresas = async (state) =>{
     console.log(peticion.data);
     state(peticion.data);
 }
+const allHomex = async (state) =>{
+    const peticion = await axios.get('http://localhost:9000/homex')
+    console.log(peticion.data);
+    state(peticion.data);
+}
 
 const getProductos = async (state, empresa) =>{
     const peticion = await axios.get('http://localhost:9000/products')
@@ -33,5 +38,6 @@ export{
     todasCategorias,
     getEmpresas,
     allEmpresas,
+    allHomex,
     getProductos
 }

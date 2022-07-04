@@ -3,4 +3,7 @@
 .body{
     font-family: 'Oxygen', sans-serif;
 }
+.bordes {
+	box-shadow: rgba(45, 212, 191) 0px 2px 10px;
+}
 

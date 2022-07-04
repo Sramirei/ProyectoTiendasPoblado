@@ -10,13 +10,24 @@ const Item = ({ Links, title }) => {
             className="text-gray-400 hover:text-teal-400 duration-300
           text-sm cursor-pointer leading-6"
             href={link.link}
+           
           >
             {link.name}
           </a>
         </li>
       ))}
     </ul>
+    
   );
+
 };
+
+
+    /* $('#link1').on('click', function(e) {
+      e.preventDefault();
+      $("html, body").animate({scrollTop: $('#section1').offset().top }, 1000);
+    }); */
+
+
 
 export default Item;

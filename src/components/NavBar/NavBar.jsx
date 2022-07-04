@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom'
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
-import  logo from "./POBLA-WEB-LOGO.png"
-import Image from './Image.jpeg'
+import  logo from "./LOGOPRINCIPALSUITTE.png"
+import Image from './Image.png'
 import './NavBar.css'
 
 const NavBar = () => {
@@ -12,14 +12,16 @@ const NavBar = () => {
     const navigation = [
         { name: 'Inicio', href: '/' },
         { name: 'Categorías', href: '/categorias' },
-        { name: '¿Quienes Somos?', href: '/About' },
+        { name: '¿Quienes Somos?', href: '/somos' },
       ]
 
   return (
 
 <div className="relative bg-white overflow-hidden">
 <div className="max-w-7xl mx-auto">
-  <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+{/* lg:pb-28 xl:pb-32 */}
+{/* pb-8 */}
+  <div className="relative z-10  bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full ">
     <svg
       className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
       fill="currentColor"
@@ -36,17 +38,17 @@ const NavBar = () => {
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <NavLink to={'/'}>
-                <span className="sr-only">Poblado Web</span>
+                
                 {/* Logo modificado css */}
                 <img
-                  alt="Poblado Web"
+                  alt="Suitte"
                   className="logo"
                   src={logo}
                 />
               </NavLink>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-500">
-                  <span className="sr-only">Open main menu</span>
+                  
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
@@ -54,11 +56,11 @@ const NavBar = () => {
           </div>
           <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
             {navigation.map((item) => (
-              <NavLink key={item.name} to={item.href} className={`font-medium text-gray-500 hover:text-gray-900 ${({ isActive}) => (isActive ? 'text-cyan-500' : '')}`}>
+              <NavLink key={item.name} to={item.href} className={`font-medium text-gray-600 hover:text-cyan-400 ${({ isActive}) => (isActive ? 'text-cyan-500' : '')}`}>
                 {item.name}
               </NavLink>
             ))}
-            <NavLink to={'/contacto'} className="font-medium text-cyan-600 hover:text-cyan-500">
+            <NavLink to={'/contacto'} className="font-medium text-gray-600 hover:text-cyan-400">
               Contáctenos
             </NavLink>
           </div>
@@ -100,7 +102,7 @@ const NavBar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-cyan-600 hover:bg-gray-100"
                 >
                   {item.name}
                 </a>
@@ -108,7 +110,7 @@ const NavBar = () => {
             </div>
             <NavLink
               to={"/contacto"}
-              className="block w-full px-5 py-3 text-center font-medium text-cyan-600 bg-gray-50 hover:bg-gray-100"
+              className="block w-full px-5 py-3 text-center font-medium text-gray-700 hover:text-zinc-100 bg-gray-50 hover:bg-cyan-600"
             >
               Contáctenos
             </NavLink>
@@ -120,9 +122,10 @@ const NavBar = () => {
     
   </div>
 </div>
-<div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+<div className="lg:absolute lg:inset-y-1 lg:right-1 lg:w-1/2">
+{/* object-cover */}
   <img
-    className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+    className=" w-full  sm:w-full sm:h-full md:w-full md:h-60 lg:w-full lg:h-full"
     src={Image}
     alt="Fondo"
   />

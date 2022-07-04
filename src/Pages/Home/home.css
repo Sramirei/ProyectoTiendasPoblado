@@ -117,3 +117,11 @@
         border-radius:150px !important;
     }
 }
+
+.borde{
+    border-radius: 10px;
+}
+
+.tamaño{
+    max-width: 100%;
+}
