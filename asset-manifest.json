@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ProyectoTiendasPoblado/static/css/main.93203082.css",
+    "main.js": "/ProyectoTiendasPoblado/static/js/main.fe7cd449.js",
+    "static/media/Image.png": "/ProyectoTiendasPoblado/static/media/Image.139690d69642629d2235.png",
+    "index.html": "/ProyectoTiendasPoblado/index.html",
+    "main.93203082.css.map": "/ProyectoTiendasPoblado/static/css/main.93203082.css.map",
+    "main.fe7cd449.js.map": "/ProyectoTiendasPoblado/static/js/main.fe7cd449.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93203082.css",
+    "static/js/main.fe7cd449.js"
+  ]
+}
